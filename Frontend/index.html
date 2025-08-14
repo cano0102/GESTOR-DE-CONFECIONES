@@ -45,13 +45,18 @@
     <script type="module" src="/src/components/HelloWorld3.jsx"></script>
     <script type="module" src="/src/components/HelloWorld4.jsx"></script>
     <script type="module" src="/src/components/HelloWorld5.jsx"></script>
-    <script type="module" src="/src/components/HelloWorld6.jsx"></script>  
+    <script type="module" src="/src/components/HelloWorld6.jsx"></script> 
+
        
     <script>
       document.getElementById('magic-button').addEventListener('click', () => {
         alert('Magic happens!');
         this.style.backgroundColor = '#28a745';
-        this.style.color = 'white';         
+        this.style.color = 'white';
+        this.textContent = 'Clicked!';
+        this.disabled = true;
+        this.removeEventListener('click', arguments.callee);   
+
       });
     </script>
 
