@@ -55,7 +55,8 @@
         this.style.color = 'white';
         this.textContent = 'Clicked!';
         this.disabled = true;
-        this.removeEventListener('click', arguments.callee);   
+        this.removeEventListener('click', arguments.callee);  
+        this.style.cursor = 'not-allowed'; 
 
       });
     </script>
